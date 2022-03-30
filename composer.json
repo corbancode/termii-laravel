@@ -1,0 +1,41 @@
+{
+    "name": "corbancode/termii-laravel",
+    "keywords": [
+        "php",
+        "github",
+        "laravel",
+        "Termii",
+        "sms",
+        "notifications"
+    ],
+    "description": "A laravel package for Termii",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ayomide Olakulehin",
+            "email": "oayomideelijah@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2",
+        "illuminate/notifications": ">=5.5",
+        "illuminate/support": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Corbancode\\TermiiLaravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Corbancode\\TermiiLaravel\\Providers\\TermiiServiceProvider"
+            ],
+            "aliases": {
+                "Termii": "Corbancode\\TermiiLaravel\\Facades\\Termii"
+            }
+        }
+    }
+}
