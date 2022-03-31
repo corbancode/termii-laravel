@@ -1,11 +1,11 @@
 <?php
 
-namespace Corbancode\TermiiLaravel\Services;
+namespace Corbancode\TermiiLaravel\Traits;
 
 use Corbancode\TermiiLaravel\Enums\EndpointsEnum;
 use Illuminate\Support\Facades\Http;
 
-class InsightsService
+trait InsightsRequest
 {
 
 }

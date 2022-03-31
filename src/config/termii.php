@@ -4,6 +4,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | API BASE URL
+    |--------------------------------------------------------------------------
+    |
+    | Your Termii account has its own Base URL, which you should use in all
+    | API requests. Your base URL can be found on your dashboard.
+    | Default: https://api.ng.termii.com
+    |
+    */
+    'api_base_url' => env('TERMII_API_BASE_URL', 'https://api.ng.termii.com'),
+
+    /*
+    |--------------------------------------------------------------------------
     | API KEY
     |--------------------------------------------------------------------------
     |
@@ -26,18 +38,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | STORE NOTIFICATIONS
-    |--------------------------------------------------------------------------
-    |
-    | If you are using Laravel Notifications to send your sms, you can store
-    | a copy of your messages to the database. This value determines if
-    | a copy would be stored or not.
-    |
-    */
-    'store_notifications' => false,
-
-    /*
-    |--------------------------------------------------------------------------
     | REQUEST TIMEOUT
     |--------------------------------------------------------------------------
     |
@@ -45,5 +45,9 @@ return [
     | timeout.
     |
     */
-    'request_timeout' => env('REQUEST_TIMEOUT', 120)
+    'request_timeout' => env('TERMII_REQUEST_TIMEOUT', 120),
+
+    'sms_from' => env('TERMII_SMS_FROM'),
+
+    'sms_channel' => env('TERMII_SMS_CHANNEL', 'generic')
 ];
