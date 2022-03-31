@@ -1,26 +1,17 @@
 # Termii Laravel
 This package makes it easy to integrate with [Termii's API](https://developers.termii.com/) with Laravel.
 
+## Please visit [Termii Laravel Wiki](https://github.com/corbancode/termii-laravel/wiki) for more information:
+
 ## Contents
-- [Installation](#installation)
-    - [Setting up your Termii account](#setting-up-your-termii-account)
-- [Usage](#usage)
-    - [Available methods](#available-methods)
-    - [Notifications Channel](#notifications-channel)
-- [Changelog](#changelog)
+- [Installation](https://github.com/corbancode/termii-laravel/wiki/installation)
+- [Configuration](https://github.com/corbancode/termii-laravel/wiki/configuration)
+- [Usage](https://github.com/corbancode/termii-laravel/wiki/usage)
+    - [Available methods](https://github.com/corbancode/termii-laravel/wiki/usage#available-methods)
+    - [Notifications Channel](https://github.com/corbancode/termii-laravel/wiki/usage#notifications-channel)
+- [Changelog](https://github.com/corbancode/termii-laravel/wiki/changelog)
 - [Security](#security)
-- [Contributing](#contributing)
-- [Credits](#credits)
 - [License](#license)
-
-
-## Installation
-
-You can install the package via composer:
-
-``` bash
-composer require corbancode/termii-laravel
-```
 
 ## Security
 

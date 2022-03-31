@@ -95,7 +95,7 @@ class TermiiMessage
     /**
      * Set the medi for the message. Works only for whatsapp channels
      *
-     * @param string $channel
+     * @param array $media
      *
      * @return $this
      */
