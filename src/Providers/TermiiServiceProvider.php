@@ -7,7 +7,11 @@ use Illuminate\Foundation\AliasLoader;
 
 use Corbancode\TermiiLaravel\TermiiFactory;
 use Corbancode\TermiiLaravel\Facades\Termii as TermiiFacade;
+use Corbancode\TermiiLaravel\Notifications\TermiiChannel;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Notifications\ChannelManager;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Notification;
 
 class TermiiServiceProvider extends ServiceProvider
 {
@@ -36,6 +40,12 @@ class TermiiServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->registerFacades();
+
+        Notification::resolved(function (ChannelManager $service) {
+            $service->extend('termii', function (Application $app) {
+                return new TermiiChannel;
+            });
+        });
     }
 
     protected function registerFacades(): void
